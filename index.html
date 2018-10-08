@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - PurrfectFilms</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro">
+    <link rel="stylesheet" href="assets/vendor/pacescript/pace.css">
+    <link rel="stylesheet" href="assets/css/Team-with-rotating-cards.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-light navbar-expand-md navbar-expand-lg fixed-top navbar-shrink" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">PurrfectFilms</a><button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger navbarSpy" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">ABOUT</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger navbarSpy" role="presentation"><a class="nav-link js-scroll-trigger" href="#services">SERVICES</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger navbarSpy" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <canvas id="canvasX"></canvas>
+    </div>
+    <header class="masthead">
+        <div class="intro-body">
+            <!--    <video class="fill" poster="assets/video/Film-set/Film-set.jpg" id="bgvid" playsinline autoplay muted loop>
+                        <source src="assets/video/Film-set/Film-set_Trim.mp4" type="video/mp4">
+            </video> -->
+            <div class="container">
+                <div id="helloSect" class="row">
+                    <div class="col-sm-9 col-lg-8 mx-auto" style="height:472px;margin:20px 160px 0px;">
+                        <img src="assets/img/logo-1.jpg" id="catImg" style="margin:0px 0px 15px;">
+                        <h1 id="companyName" class="pulse animated brand-heading">Purrfect FILMS</h1>
+                        <h1 id="welcomeText">Welcome to our studio</h1>
+                        <a id="welcomeButton" class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="content-section text-center">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="aboutAnimate">About</h2>
+            </header>
+            <div class="row justify-content-center rowImage">
+                <div id="imageAbout" class="col-lg-5 aboutContent">
+                    <img class="processImg" src="assets/img/stoiryboard.jpg"></img>
+                </div>
+                <div id="textAbout" class="col-lg-5 aboutContent">
+                    <p class="processText">From developing stories, scripting, storyboarding to delivering the final product, we strategize on executing the whole project with your objectives in mind, resulting in the "Purrfect" outcome.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center rowImage">
+                <div id="imageAbout" class="col-lg-5 aboutContent">
+                    <img class="processImg" src="assets/img/scene.jpg"></img>
+                </div>
+                <div id="textAbout" class="col-lg-5 aboutContent">
+                    <p class="processText">With professional film production workflow, our talented young filmmakers work together to achieve the best outcome in our projects. We are equipped with a list of fresh producers, directors, cinematographers, and many more.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center rowImage">
+                <div id="imageAbout" class="col-lg-5 aboutContent">
+                    <img class="processImg" src="assets/img/last-fable.jpg"></img>
+                </div>
+                <div id="textAbout" class="col-lg-5 aboutContent">
+                    <p class="processText">Our journey in delivering the "Purrfect" results doesn't end in production, so we work together with you closely to give you the best result during editing. We edit, sound design, and color grade to give the finest cinematic quality in our works.</p>
+                </div>
+            </div>
+            <!-- OUR TEAM CARD -->
+            <div class="row">
+                <div class="col">
+                    <section class="card-section-imagia" style="background-color:rgba(0,0,0,0);">
+                        <h1 style="font-size:26px;" id="ourteamAnimate">Our team</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-xs-8 cardResize">
+                                    <div class="card-container-imagia">
+                                        <div class="card-imagia">
+                                            <div class="front-imagia">
+                                                <div class="cover-imagia"></div>
+                                                <div class="user-imagia"><img src="assets/img/irfan.jpg" alt="" /></div>
+                                                <div class="content-imagia">
+                                                    <h3 class="name-imagia" style="color:rgb(0,0,0);">irfan nadzree</h3>
+                                                    <p class="text-center" style="color:rgb(0,0,0);"><em>Director - Cinematographer - Editor</em></p>
+                                                </div>
+                                                <div class="footer-imagia"><span><i class="fa fa-plus"></i> More info</span></div>
+                                            </div>
+                                            <div class="back-imagia">
+                                                <div class="content-imagia content-back-imagia">
+                                                    <div>
+                                                        <p class="text-center backcoverText" style="color:rgb(0,0,0);margin:0px 0px 10px;">A critical thinker and the ace of spades, Irfan Nadzree is the person when it comes to the technical aspects of all things filmmaking be it from preproduction to post production. He is known for his vast skillset in filmmaking, he has worked on more than 30 productions as Director, Cinematographer, Editor, Colorist and a few more roles.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="footer-imagia">
+                                                    <div class="social-imagia text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-xs-8 cardResize">
+                                    <div class="card-container-imagia">
+                                        <div class="card-imagia">
+                                            <div class="front-imagia">
+                                                <div class="cover-imagia"></div>
+                                                <div class="user-imagia"><img src="assets/img/scar.jpg" alt="" /></div>
+                                                <div class="content-imagia">
+                                                    <h3 class="name-imagia" style="color:rgb(0,0,0);">shima scarlett​​</h3>
+                                                    <p class="text-center" style="color:rgb(0,0,0);"><em>Producer - Writer - Director​</em></p>
+                                                </div>
+                                                <div class="footer-imagia"><span><i class="fa fa-plus"></i> More info</span></div>
+                                            </div>
+                                            <div class="back-imagia">
+                                                <div class="content-imagia content-back-imagia">
+                                                    <div>
+                                                        <p class="text-center backcoverText" style="color:rgb(0,0,0);margin:0px 0px 10px;">The philosophical artist, Shima Scarlett has been in the local art scene as both an artist and writer, now puts her talent in film. Being very critical with her works, she brings empathatic stories regarding the human condition on screen. Mainly write and direct, she has done projects ranging from local to international content. She also has had experience working as a casting director in Pinewood Studios for the project Anak Merdeka.&nbsp;<br></p>
+                                                    </div>
+                                                </div>
+                                                <div class="footer-imagia">
+                                                    <div class="social-imagia text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-xs-8 cardResize">
+                                    <div class="card-container-imagia">
+                                        <div class="card-imagia">
+                                            <div class="front-imagia">
+                                                <div class="cover-imagia"></div>
+                                                <div class="user-imagia"><img src="assets/img/seyn.jpg" alt="" /></div>
+                                                <div class="content-imagia">
+                                                    <h3 class="name-imagia" style="color:rgb(0,0,0);">seyn jukey</h3>
+                                                    <p class="text-center" style="color:rgb(0,0,0);"><em>Manager - Producer</em></p>
+                                                </div>
+                                                <div class="footer-imagia"><span><i class="fa fa-plus"></i> More info</span></div>
+                                            </div>
+                                            <div class="back-imagia">
+                                                <div class="content-imagia content-back-imagia">
+                                                    <div>
+                                                        <p class="text-center backcoverText" style="color:rgb(0,0,0);margin:0px 0px 10px;">Coming from the local art scene, Seyn Jukey has experience in dealing with anything that has to do with art. His never ending burn of passion to better the nation’s art appreciation is his main drive in being in this field. In 9 years inside arts industry, he has founded creative agency, publishing house, art space and own creative festival to his records. That is the summed up for almost 500 art events nationality and internationally with more than 20 writers under his management including Fynn Jamal and Takahara Suiko.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="footer-imagia">
+                                                    <div class="social-imagia text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="services" class="content-section text-center" style="background-image:url('assets/img/simple-gray-abstract-background.jpg');background-size: cover;">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="serviceAnimate">SERVICES</h2>
+            </header>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-xs-12 serviceContent" style="margin: 10px 0px">
+                    <div class="iconService">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h4 class="headerTitle">Pre-Production</h4>
+                    <p class="serviceText">
+                        Idea development<br> Storyboarding
+                        <br> Screenwriting
+                        <br> Producing
+                        <br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12 serviceContent" style="margin: 10px 0px">
+                    <div class="iconService">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h4 class="headerTitle">Post-Production</h4>
+                    <p class="serviceText">
+                        Editing<br> Color Grading<br> Motion Graphics<br> Visual Effects<br> Sound Design<br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12 serviceContent" style="margin: 10px 0px">
+                    <div class="iconService">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h4 class="headerTitle">Films</h4>
+                    <p class="serviceText">
+                        Short Films<br> Feature Films<br> TV Films<br> Drama
+                        <br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12 serviceContent" style="margin: 10px 0px">
+                    <div class="iconService">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h4 class="headerTitle">Documentary</h4>
+                    <p class="serviceText">
+                        Short Documentary<br> Web Documentary<br> TV Documentary<br> Feature Documentary<br> Mockumentary
+                        <br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12 serviceContent" style="margin: 10px 0px">
+                    <div class="iconService">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h4 class="headerTitle">Corporate</h4>
+                    <p class="serviceText">
+                        Corporate Videos<br> Company Product Videos<br> Company Event Videos<br> Company Profile Videos<br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12 serviceContent" style="margin: 10px 0px">
+                    <div class="iconService">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h4 class="headerTitle">Commercials</h4>
+                    <p class="serviceText">
+                        Web Commercials<br> TV Commercials<br> Short Social Media Commercials<br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12 serviceContent" style="margin: 10px 0px">
+                    <div class="iconService">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h4 class="headerTitle">Music Video</h4>
+                    <p class="serviceText">
+                        Music Videos<br> Lyric Videos<br> Personal Videos<br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12 serviceContent" style="margin: 10px 0px">
+                    <div class="iconService">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <h4 class="headerTitle">Other Videos</h4>
+                    <p class="serviceText">
+                        PSA<br> Event Highlights<br> Personal Videos<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PARALLAX EFFECT HERE -->
+    <section id="parallax" class="content-section text-center">
+        <div style="background-image:url(https://unsplash.it/1800/900?image=1051);background-position:center;background-size:cover; background-attachment:fixed;">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="factsAnimate">FACTS</h2>
+                </header>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 mx-auto">
+                        <span class="counter">12</span>
+                        <p>Clients</p>
+                    </div>
+                    <div class="col-lg-4 mx-auto">
+                        <span class="counter">31</span>
+                        <p>Projects</p>
+                    </div>
+                    <div class="col-lg-4 mx-auto">
+                        <span class="counter">259</span>
+                        <p>Hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="content-section text-center">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="contactAnimate">CONTACT</h2>
+            </header>
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 py-5">
+                    <h1>LOCATION</h1>
+                    <div id="map" style="z-index: 10;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 py-5">
+                    <h1>EMAIL</h1>
+
+                    <form id="contact-form" method="post" action="assets/php/contact.php" role="form">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Please specify your need *</label>
+                                        <select id="form_need" name="need" class="form-control" required="required" data-error="Select your area of interest.">
+                                            <option value=""></option>
+                                            <option value="PRE-PRODUCTION">PRE-PRODUCTION</option>
+                                            <option value="POST-PRODUCTION">POST-PRODUCTION</option>
+                                            <option value="FILMS">FILMS</option>
+                                            <option value="DOCUMENTARY">DOCUMENTARY</option>
+                                            <option value="CORPORATE">CORPORATE</option>
+                                            <option value="COMMERCIALS">COMMERCIALS</option>
+                                            <option value="MUSIC VIDEO">MUSIC VIDEO</option>
+                                            <option value="OTHER VIDEOS">OTHER VIDEOS</option>
+                                            <option value="OTHERS">OTHERS</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted">
+                                        <strong>*</strong> These fields are required.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">&nbsp; Google+</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;Twitter</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button">
+    <i class="fa fa-facebook-official fa-fw"></i>
+    <span class="network-name">Facebook</span>
+    </button></li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container text-center">
+            <p>Copyright ©&nbsp;PurrfectFilms 2018</p>
+        </div>
+    </footer>
+    <!-- SIDEBAR ICONS -->
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+    <!--   <script src="assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/myscript.js"></script>
+    <script src="assets/vendor/pacescript/pacescript.js"></script>
+    <!-- compatibility issue with counterup/waypoint/jquery, used old version for now -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOkkNGMQh4a0xqODklWB9xuT7G-k2vSIQ"></script>
+    <script src="assets/js/contact.js"></script>
+    <!--
+    <script src="assets/vendor/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="assets/vendor/jquery-waypoints/waypoints.min.js"></script> -->
+</body>
+
+</html>
